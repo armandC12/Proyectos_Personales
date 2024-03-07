@@ -1,0 +1,217 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body{
+    background: linear-gradient(to bottom, rgb(255, 81, 0), rgb(238, 119, 64)); /* Aquí defines los colores del degradado */
+    color: black;
+    min-width: 440px;
+}
+
+/* header¨*/
+#header{
+    background-color: black;
+    text-align: center;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinea los elementos a los extremos del contenedor */
+    padding: 0 20px; /* Agrega un espaciado interno a los extremos del contenedor (opcional) */
+}
+
+#LogoPrincipal{
+    width: 380px;
+    height: 100px;
+}
+
+.nav-link, label {
+    font-size: 2vw; /* Utilizando 'vw' (viewport width) para que se ajuste al ancho de la ventana */
+    text-decoration-line: none;
+    background-color: white;
+    padding: 0.8vw; /* Utilizando 'vw' para el padding */
+    border-radius: 40px; /* Utilizando 'vw' para el radio del borde */
+    text-shadow:
+        0.1em 0.1em 0.2em black, /* Cambiando valores para el sombreado del texto */
+        0 0 0.2em #ff6e1b,
+        0 0 0.05em #ff6e1b;
+    color: black;
+    font: 1.5em Georgia, serif;
+    transition: color 0.3s ease; /* Agregando una transición suave en el cambio de color */
+}
+
+.nav-link:hover {
+    color: #ff6e1b;
+}
+
+/* main */
+#main{
+    min-width: 440px;
+}
+
+#Cantantes img{
+    width: 100%;
+    max-width: 100%; /* Aseguraro de que la imagen se expanda para ocupar todo el ancho de su contenedor */
+    height: 1200px; /* Aseguro que la altura se ajuste proporcionalmente al ancho */
+}
+
+#Nosotrosall{
+    margin: 20px 0 20px 0;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+#Nosotros{
+    font-size: 60px;
+}
+
+#Descripcion {
+    background: linear-gradient(to bottom, black, #313131); /* Aquí defines los colores del degradado */
+    color: #ff6e1b;
+    padding: 10px;
+}
+
+#p1,#p2,#p3,#p4, #N1{
+    /*centramos al medio el texto*/
+    font-size: 30px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 200px;
+}
+
+#N1 {
+    font-size: 45px;
+}
+
+.cantores{
+    padding: 40px 20px;
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#Cesar, #Mauricio, #David {
+    text-align: start;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    flex: 5;
+    max-width: 300px; /* Ajusta el ancho máximo según tus preferencias */
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
+    padding: 10px;
+    margin: 20px 50px; /* Espaciado entre los elementos */
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em #ff6e1b,
+    0 0 0.2em #ff6e1b;
+}
+
+#Cesar:hover, #Mauricio:hover, #David:hover{
+    color: #ff6e1b;
+    scale: 1.1;
+    transition: all 0.5s;
+}
+
+#Albumesall, #Albumes{
+    min-width: 440px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 60px;
+}
+
+.Discografias{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 150px;
+}
+
+#album11, #album21, #album31, #album41{
+    padding: 10px 15px;
+    margin: 10px 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    max-width: 300px;
+    box-sizing: border-box;
+    font-size:large;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em #ff6e1b,
+    0 0 0.2em #ff6e1b;
+}
+
+#album1, #album2, #album3, #album4, ol{
+    padding: 10px 15px;
+    margin: 10px 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    text-align: start;
+    max-width: 300px;
+    box-sizing: border-box;
+    font-size:large;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em #ff6e1b,
+    0 0 0.2em #ff6e1b;
+}
+
+/* Agrandamos el tamaño del album correspondiente*/
+#album1:hover, #album2:hover, #album3:hover, #album4:hover, ol:hover{
+    color: #ff6e1b;
+    scale: 1.1;
+    transition: all 0.5s;
+}
+
+/* footer */
+#footer {
+    background-color: black;
+    color: #ff6e1b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Para separar los elementos en los extremos */
+    align-items: center; /* Para centrar verticalmente */
+    min-height: 140px;
+    padding: 0 150px; /* Añadido para dar un espacio en los extremos */
+}
+
+#Seguir {
+    font-size: 40px;
+}
+
+#redes {
+    font-size: 40px;
+}
+
+.redes-container {
+    display: flex;
+    gap: 10px; /* Añadido espacio entre los íconos de las redes sociales */
+}
+
+/* Estilo básico para los íconos de las redes sociales (puedes ajustar según tus necesidades) */
+.redes-container i {
+    color: #ff6e1b;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.redes-container i:hover {
+    scale: 1.8;
+    color: white;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em #ff6e1b,
+    0 0 0.2em #ff6e1b;
+
+}
